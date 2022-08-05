@@ -1,6 +1,7 @@
 # Statistics-and-Data-Analysis-in-Python
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26144846-fb38-4703-9918-4dc71208634e/deploy-status)](https://app.netlify.com/sites/stat-da-python/deploys)
+
 Statistics-and-Data-Analysis-in-Python
 
-This Kernel is an index accompanying a series of tutorial notebooks introducing Python for data analysis. This series is intended for those new to data science, programming and Python. It is an updated version of a guide I previously posted on my blog.
-
-I am also creating a 30-Part YouTube series covering each lesson in a video format. If you're interested in that, view the [Python for Data Analysis Playlist](https://www.youtube.com/playlist?list=PLiC1doDIe9rCYWmH9wIEYEXXaJ4KAi3jc).
+统计及数据分析学习笔记
