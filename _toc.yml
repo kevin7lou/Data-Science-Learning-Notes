@@ -12,7 +12,7 @@ parts:
     - file: doc/Python for Data Analysis/S1D00-getting-started.md
       title: "Section 1: Getting Started"
       sections:
-      - file: doc/Python for Data Analysis/S1D00-getting-started.md
+      - file: doc/Python for Data Analysis/S1D01-getting-started.ipynb
         title: Getting Started
       - file: doc/Python for Data Analysis/S1D02-python-arithmetic
         title: Python Arithmetic
