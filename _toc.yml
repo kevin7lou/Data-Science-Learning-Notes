@@ -4,7 +4,7 @@
 format: jb-book
 root: README
 parts:
-- caption: Python for Data Analysis
+- caption: Python for Data Analysis 📚
   chapters:
   - file: doc/Python for Data Analysis/README
     title: Index of Contents
@@ -41,7 +41,7 @@ parts:
       title: Control Flow
   # - file: tutorials/references
 
-- caption: Topic Guides
+- caption: Topic Guides 🧭
   # chapters:
   # - file: basics/organize
   #   sections:
