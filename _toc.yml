@@ -3,7 +3,33 @@
 
 format: jb-book
 root: README
-chapters:
-- file: tmp/markdown
-- file: tmp/notebooks
-- file: tmp/markdown-notebooks
+parts:
+- caption: Python for Data Analysis
+  chapters:
+  - file: doc/Python for Data Analysis/README
+    title: Index of Contents
+    sections:
+    - file: doc/Python for Data Analysis/S1D01-getting-started
+    - file: doc/Python for Data Analysis/S1D02-python-arithmetic
+    - file: doc/Python for Data Analysis/S1D03-basic-data-types.ipynb
+    - file: doc/Python for Data Analysis/S2D04-variables.ipynb
+    - file: doc/Python for Data Analysis/S2D05-lists.ipynb
+    - file: doc/Python for Data Analysis/S2D06-tuples-and-strings.ipynb
+    - file: doc/Python for Data Analysis/S2D07-dictionaries-and-sets.ipynb
+    - file: doc/Python for Data Analysis/S2D08-numpy-arrays.ipynb
+    - file: doc/Python for Data Analysis/S2D09-pandas-dataframes.ipynb
+    - file: doc/Python for Data Analysis/S2D10-reading-and-writing-data.ipynb
+    - file: doc/Python for Data Analysis/S3D11-control-flow.ipynb
+  # - file: tutorials/references
+
+- caption: Topic Guides
+  # chapters:
+  # - file: basics/organize
+  #   sections:
+  #   - file: structure/toc
+  #   - file: structure/configure
+  #   - file: file-types/index
+  chapters:
+  - file: tmp/markdown
+  - file: tmp/notebooks
+  - file: tmp/markdown-notebooks
