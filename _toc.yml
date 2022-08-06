@@ -6,38 +6,38 @@ root: README
 parts:
 - caption: 📚 Python for Data Analysis
   chapters:
-  - file: doc/Python for Data Analysis/README
+  - file: doc/Python-for-Data-Analysis/README
     title: Index of Contents
-  - file: doc/Python for Data Analysis/S1D00-getting-started.md
+  - file: doc/Python-for-Data-Analysis/S1D00-getting-started.md
     title: "Section 1: Getting Started"
     sections:
-    - file: doc/Python for Data Analysis/S1D01-getting-started.ipynb
+    - file: doc/Python-for-Data-Analysis/S1D01-getting-started.ipynb
       title: Getting Started
-    - file: doc/Python for Data Analysis/S1D02-python-arithmetic
+    - file: doc/Python-for-Data-Analysis/S1D02-python-arithmetic
       title: Python Arithmetic
-    - file: doc/Python for Data Analysis/S1D03-basic-data-types.ipynb
+    - file: doc/Python-for-Data-Analysis/S1D03-basic-data-types.ipynb
       title: Basic Data Types
-  - file: doc/Python for Data Analysis/S2D00-data-structure.md
+  - file: doc/Python-for-Data-Analysis/S2D00-data-structure.md
     title: "Section 2: Data Structures"
     sections: 
-    - file: doc/Python for Data Analysis/S2D04-variables.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D04-variables.ipynb
       title: Variables
-    - file: doc/Python for Data Analysis/S2D05-lists.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D05-lists.ipynb
       title: Lists
-    - file: doc/Python for Data Analysis/S2D06-tuples-and-strings.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D06-tuples-and-strings.ipynb
       title: Tuples and Strings
-    - file: doc/Python for Data Analysis/S2D07-dictionaries-and-sets.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D07-dictionaries-and-sets.ipynb
       title: Dictionaries and Sets
-    - file: doc/Python for Data Analysis/S2D08-numpy-arrays.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D08-numpy-arrays.ipynb
       title: Numpy Arrays
-    - file: doc/Python for Data Analysis/S2D09-pandas-dataframes.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D09-pandas-dataframes.ipynb
       title: Pandas DataFrames
-    - file: doc/Python for Data Analysis/S2D10-reading-and-writing-data.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D10-reading-and-writing-data.ipynb
       title: Reading and Writing Data
-  - file: doc/Python for Data Analysis/S3D00-programming-constructs.md
+  - file: doc/Python-for-Data-Analysis/S3D00-programming-constructs.md
     title: "Section 3: Programming Constructs"
     sections:
-    - file: doc/Python for Data Analysis/S3D11-control-flow.ipynb
+    - file: doc/Python-for-Data-Analysis/S3D11-control-flow.ipynb
       title: Control Flow
   # - file: tutorials/references
 
