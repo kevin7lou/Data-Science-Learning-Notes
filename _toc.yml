@@ -30,6 +30,8 @@ parts:
       title: Dictionaries and Sets
     - file: doc/Python-for-Data-Analysis/S2D08-numpy-arrays.ipynb
       title: Numpy Arrays
+    - file: doc/Python-for-Data-Analysis/S2D08-visual-numpy.md
+      title: Visual Intro to NumPy
     - file: doc/Python-for-Data-Analysis/S2D09-pandas-dataframes.ipynb
       title: Pandas DataFrames
     - file: doc/Python-for-Data-Analysis/S2D10-reading-and-writing-data.ipynb
