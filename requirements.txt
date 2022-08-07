@@ -3,6 +3,7 @@ numpy
 pandas
 matplotlib
 # python3-sphinx
+jupytext
 sphinx-click
 sphinx-inline-tabs
 sphinxext-rediraffe
