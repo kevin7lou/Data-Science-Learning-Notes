@@ -2,7 +2,7 @@ jupyter-book
 numpy
 pandas
 matplotlib
-python3-sphinx
+# python3-sphinx
 sphinx-click
 sphinx-inline-tabs
 sphinxext-rediraffe
