@@ -2,3 +2,8 @@ jupyter-book
 numpy
 pandas
 matplotlib
+python3-sphinx
+sphinx-click
+sphinx-inline-tabs
+sphinxext-rediraffe
+sphinx-proof
