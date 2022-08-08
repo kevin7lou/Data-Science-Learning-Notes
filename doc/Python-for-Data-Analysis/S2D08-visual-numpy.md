@@ -24,7 +24,7 @@ import numpy as np
 
 ### 建立阵列
 
-我们可以透过 `np.array()` 并传入一个 python list 来建立一个 numpy 的**阵列** (又叫「**N维数组**」 [ndarray]((https://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html)))，如下所示：
+我们可以透过 `np.array()` 并传入一个 python list 来建立一个 numpy 的**阵列** （又叫「**N维数组**」 [ndarray](https://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html) ），如下所示：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/create-numpy-array-1.png)
 
@@ -313,3 +313,8 @@ Here's my warning
 ```
 
 ````
+
+```{admonition} 在线刷题
+:class: seealso
+检查 or 强化 `Pandas` 数据分析操作？<a href="https://www.heywhale.com/mw/project/6146c0318447b8001769ff20" target="_blank">👉在线体验「Pandas进阶修炼300题」</a>
+```

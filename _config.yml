@@ -27,17 +27,19 @@ html:
   home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar
 
 # Parse and render settings
+  # myst_substitutions:
+  #     sub3: My _global_ value!
 parse:
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
-    # - amsmath
+    - amsmath
     - colon_fence
-    # - deflist
+    - deflist
     - dollarmath
     - html_admonition
-    # - html_image
+    - html_image
     - linkify
-    # - replacements
-    # - smartquotes
+    - replacements
+    - smartquotes
     - substitution
     - tasklist
   myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
@@ -119,3 +121,12 @@ repository:
 #     - sphinxext.rediraffe
 #     - sphinx_proof
 #     # - sphinx_examples
+
+extra_extensions:
+  - sphinx_click.ext
+  - sphinx_inline_tabs
+  - sphinxext.rediraffe
+  - sphinx_proof
+  - myst_nb
+  - sphinx_thebe
+  - html_image
