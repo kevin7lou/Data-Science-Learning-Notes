@@ -12,7 +12,7 @@
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-array.png)
 
-[NumPy](https://www.numpy.org/) 套件是 python 生态系中针对数据分析、机器学习和科学计算的重要角色。它大量简化了向量和矩阵的操作运算，某些 python 的主要套件大量依赖 numpy 作为其架构的基础 (例如：scikit-learn、SciPy、Pandas 和 tensorflow)。除了可以针对数据进行切片 (slice) 和 切块 (dice) 之外，熟悉 numpy 还可以对使用上述套件带来极大的好处。
+[NumPy](https://www.numpy.org/) 套件是 python 生态系中针对数据分析、机器学习和科学计算的重要角色。它大量简化了向量和矩阵的操作运算，某些 python 的主要套件大量依赖 numpy 作为其架构的基础 (例如：scikit-learn、SciPy、Pandas 和 tensorflow)。除了可以针对数据进行 **切片 (slice)** 和 **切块 (dice)** 之外，熟悉 numpy 还可以对使用上述套件带来极大的好处。
 
 在本文中，我们会学习 numpy 主要的使用方式，并且看到它如何用来表示不同类型的数据 (表格、影像、文字 ... 等) 作为机器学习模型的输入。
 
@@ -20,19 +20,21 @@
 import numpy as np
 ```
 
-## 建立阵列
+## N维数组（阵列）
 
-我们可以透过 `np.array()` 并传入一个 python list 来建立一个 numpy 的阵列 (又叫 [ndarray]((https://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html)))，如下所示：
+### 建立阵列
+
+我们可以透过 `np.array()` 并传入一个 python list 来建立一个 numpy 的**阵列** (又叫「**N维数组**」 [ndarray]((https://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html)))，如下所示：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/create-numpy-array-1.png)
 
-通常我们希望 numpy 能够初始化阵列的值，因此它提供了像 ones()、zeros() 和 random.random() 等方法。我们只要传入希望产生的值即可：
+通常我们希望 numpy 能够初始化阵列的值，因此它提供了像 `ones()`、`zeros()` 和 `random.random()` 等方法。我们只要传入希望产生的值即可：
 
-![image](https://github.com/kevingo/blog/blob/master/screenshot/create-numpy-array-ones-zeros-random.png)
+![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/create-numpy-array-ones-zeros-random.png)
 
 一但我们建立了阵列后，就可以透过有趣的方式来操作它们。
 
-## 矩阵运算
+### 阵列运算
 
 让我们建立两个 numpy 阵列来展示如何进行运算，分别是 `data` 和 `ones`：
 
@@ -52,15 +54,15 @@ import numpy as np
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-array-broadcast.png)
 
-看到 numpy 是如何处理这样的操作了吗？这个概念称为 *广播 (broadcasting)*，它非常有用。
+看到 numpy 是如何处理这样的操作了吗？这个概念称为 **广播 (broadcasting)**，它非常有用。
 
-## 索引
+### 索引
 
 我们可以像 python 的 list 进行切片一样，对 numpy 的阵列进行索引和切片：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-array-slice.png)
 
-## 聚合 (aggregation)
+### 聚合 (aggregation)
 
 Numpy 另外一个好处是提供了聚合函式：
 
@@ -68,7 +70,7 @@ Numpy 另外一个好处是提供了聚合函式：
 
 除了 `min`、`max` 和 `sum` 之外，你还可以使用像是 `mean` 来得到平均值，`prod` 来得到所有元素的乘积，`std` 来得到标准差，以及[其他更多的功能](https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html)。
 
-## 更多维度
+## 更多维度：矩阵
 
 上述我们所看到的范例都是在单一维度的向量上进行，而 numpy 之美在于这些操作可以扩展到任意维度的数据上。
 
@@ -82,13 +84,13 @@ np.array([[1,2],[3,4]])
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-array-create-2d.png)
 
-我们也可以使用上面提到的方法 (`ones()`、`zeros()` 和 `random.random()`)，只要传入一个 tuple 来描述我们建立矩阵的维度即可：
+我们也可以使用上面提到的方法 (`ones()`、`zeros()` 和 `random.random()`)，只要传入一个 `tuple` 来描述我们建立矩阵的维度即可：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-matrix-ones-zeros-random.png)
 
 ### 矩阵运算
 
-当两个矩阵的大小相同时，我们可以透过运算元 (`+-*/`) 来对其进行相加或相乘。Numpy 是透过 position-wise 的方式进行运算：
+当两个矩阵的大小相同时，我们可以透过运算元 (`+ - * /`) 来对其进行相加或相乘。Numpy 是透过 position-wise 的方式进行运算：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-matrix-arithmetic.png)
 
@@ -96,13 +98,13 @@ np.array([[1,2],[3,4]])
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-matrix-broadcast.png)
 
-### 内积
+#### 内积 / 点积（Dot Product）
 
 算术运算和[矩阵乘法](https://www.mathsisfun.com/algebra/matrix-multiplying.html)一个最主要的区别在于内积。在 Numpy，每一个矩阵都有一个 `dot()` 方法，我们可以透过它让矩阵之间进行内积运算：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-matrix-dot-product-1.png)
 
-我在上图的右下角显示了矩阵的维度来强调相临的两个维度必须相同，你可以把上述的运算看作：
+我在上图的右下角显示了矩阵的维度来强调**相临的两个维度必须相同**，你可以把上述的运算看作：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-matrix-dot-product-2.png)
 
@@ -122,7 +124,7 @@ np.array([[1,2],[3,4]])
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-matrix-aggregation-4.png)
 
-## 转置和 reshape
+### 置换和变形
 
 矩阵经常会进行的操作是转置，当我们要对两个矩阵进行内积操作时，经常会需要将其共享的维度对齐。在 Numpy 中，有一个方便的属性 `T` 可以得到一个转置矩阵：
 
@@ -132,9 +134,9 @@ np.array([[1,2],[3,4]])
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-reshape.png)
 
-## 更多维度
+## 更高维度
 
-上述所提到的任何操作，都可以套用在任意的维度上，其核心的数据结构叫做 ndarray (N 维阵列)。
+上述所提到的任何操作，都可以套用在任意的维度上，其核心的数据结构叫做 `ndarray` (N 维阵列)。
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-3d-array.png)
 
@@ -144,7 +146,7 @@ np.array([[1,2],[3,4]])
 
 注意：当你要显示一个 3 维的 numpy 阵列时，其显示方式和在此文中所见不同，numpy 会从最后一维开始呈现，意思就是 `np.ones((4,3,2))` 会显示如下：
 
-```
+```python
 array([[[1., 1.],
         [1., 1.],
         [1., 1.]],
@@ -162,7 +164,7 @@ array([[[1., 1.],
         [1., 1.]]])
 ```
 
-## 实务用法
+## 实际用法
 
 作为学习到目前的回报，底下是一些透过 numpy 阵列来完成特定任务的范例。
 
@@ -176,11 +178,11 @@ array([[[1., 1.],
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-mean-square-error-formula.png)
 
-这美妙的地方在于，numpy 不在乎 `predictions` 和 `labels` 裡面是一个还是一千个值 (只要它们的大小相同)。我们接下来会一步步拆解这个范例：
+这优雅的地方在于，numpy 不在乎 `predictions` 和 `labels` 裡面是一个还是一千个值 (只要它们的大小相同)。我们接下来会一步步拆解这个范例：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-mse-1.png)
 
-predictions 和 labels 向量都有三个值，也就是 n = 3，在我们进行相减后，结果如下：
+`predictions` 和 `labels` 向量都有三个值，也就是 `n = 3`，在我们进行相减后，结果如下：
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-mse-2.png)
 
@@ -192,7 +194,7 @@ predictions 和 labels 向量都有三个值，也就是 n = 3，在我们进行
 
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-mse-4.png)
 
-此结果即是 prediction 的误差值，以及此模型的品质。
+此结果即是 `prediction` 的误差值，以及此模型的质量。
 
 ## 数据表示
 
@@ -254,3 +256,60 @@ predictions 和 labels 向量都有三个值，也就是 n = 3，在我们进行
 ![image](https://raw.githubusercontent.com/kevingo/blog/master/screenshot/numpy-nlp-bert-shape.png)
 
 现在上述的诗句被表示成数值形式，模型就可以对其进行训练。其他行虽然目前是空白的，但它将会被更多的训练数据给填满。
+
+## 阅读材料
+
+````{note}
+The next info should be nested
+https://numpy.org/doc/stable/user/absolute_beginners.html#
+
+https://www.numpy.org.cn/article/basics/an_introduction_to_scientific_python_numpy.html
+
+
+
+
+```{attention}
+Here's my warning
+```
+
+```{caution}
+Here's my warning
+```
+
+```{danger}
+Here's my warning
+```
+
+```{error}
+Here's my warning
+```
+
+```{hint}
+Here's my warning
+```
+
+```{important}
+Here's my warning
+```
+
+```{tip}
+Here's my warning
+```
+
+```{warning}
+Here's my warning
+```
+
+```{deprecated}
+Here's my warning
+```
+
+```{versionadded}
+Here's my warning
+```
+
+```{versionchanged}
+Here's my warning
+```
+
+````
