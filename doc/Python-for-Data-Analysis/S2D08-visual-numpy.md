@@ -259,62 +259,8 @@ array([[[1., 1.],
 
 ## 阅读材料
 
-````{note}
-The next info should be nested
-https://numpy.org/doc/stable/user/absolute_beginners.html#
-
-https://www.numpy.org.cn/article/basics/an_introduction_to_scientific_python_numpy.html
-
-
-
-
-```{attention}
-Here's my warning
-```
-
-```{caution}
-Here's my warning
-```
-
-```{danger}
-Here's my warning
-```
-
-```{error}
-Here's my warning
-```
-
-```{hint}
-Here's my warning
-```
-
-```{important}
-Here's my warning
-```
-
-```{tip}
-Here's my warning
-```
-
-```{warning}
-Here's my warning
-```
-
-```{deprecated}
-Here's my warning
-```
-
-```{versionadded}
-Here's my warning
-```
-
-```{versionchanged}
-Here's my warning
-```
-
-````
-
-```{admonition} 在线刷题
+```{admonition} 阅读更多 👉
 :class: seealso
-检查 or 强化 `Pandas` 数据分析操作？<a href="https://www.heywhale.com/mw/project/6146c0318447b8001769ff20" target="_blank">👉在线体验「Pandas进阶修炼300题」</a>
+- [NumPy: the absolute basics for beginners](https://numpy.org/doc/stable/user/absolute_beginners.html#)
+- [NumPy 简单入门教程](https://www.numpy.org.cn/article/basics/an_introduction_to_scientific_python_numpy.html)
 ```
