@@ -36,10 +36,10 @@ parts:
       title: Pandas DataFrames
     - file: doc/Python-for-Data-Analysis/S2D10-reading-and-writing-data.ipynb
       title: Reading and Writing Data
-  - file: doc/Python-for-Data-Analysis/S3D00-programming-constructs.md
+  - file: doc/Python-for-Data-Analysis/S3/S3D00-programming-constructs.md
     title: "Section 3: Programming Constructs"
     sections:
-    - file: doc/Python-for-Data-Analysis/S3D11-control-flow.ipynb
+    - file: doc/Python-for-Data-Analysis/S3/S3D11-control-flow.ipynb
       title: Control Flow
   # - file: tutorials/references
 
