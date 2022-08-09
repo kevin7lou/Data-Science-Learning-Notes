@@ -17,6 +17,8 @@ bibtex_bibfiles:
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: auto
+  cache: ""
+  exclude_patterns: []
   stderr_output: show  # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
 
 # Add GitHub buttons to your book
