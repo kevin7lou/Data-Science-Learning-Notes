@@ -41,6 +41,19 @@ parts:
     sections:
     - file: doc/Python-for-Data-Analysis/S3/S3D11-control-flow.ipynb
       title: Control Flow
+    - file: doc/Python-for-Data-Analysis/S3D12-functions.ipynb
+      title: Functions
+    - file: doc/Python-for-Data-Analysis/S3D13-list-comprehensions.ipynb
+      title: List comprehensions
+  - file: doc/Python-for-Data-Analysis/S4D00-data-exploration-analysis.md
+    title: "Section 4: Data Exploration and Cleaning"
+    sections:
+    - file: doc/Python-for-Data-Analysis/S4D14-data-exploration-and-cleaning.ipynb
+      title: Data Exploration and Cleaning
+    - file: doc/Python-for-Data-Analysis/S4D15-working-with-text-data.ipynb
+      title: Work with Text Data
+    - file: doc/Python-for-Data-Analysis/S4D16-preparing-numeric-data.ipynb
+      title: Preparing Numeric Data
   # - file: tutorials/references
 
 - caption: 🧭 Topic Guides
