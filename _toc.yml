@@ -34,7 +34,7 @@ parts:
       title: Visual Intro to NumPy
     - file: doc/Python-for-Data-Analysis/S2D09-pandas-dataframes.ipynb
       title: Pandas DataFrames
-    - files: doc/Python-for-Data-Analysis/S2D09-pandas-practice.ipynb
+    - file: doc/Python-for-Data-Analysis/S2D09-pandas-practice.ipynb
       title: Pandas Mindmap & Practice
     - file: doc/Python-for-Data-Analysis/S2D10-reading-and-writing-data.ipynb
       title: Reading and Writing Data
