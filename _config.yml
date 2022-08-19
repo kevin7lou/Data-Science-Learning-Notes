@@ -59,8 +59,10 @@ repository:
   branch: master  # Which branch of the repository should be used when creating links (optional)
   path_to_book: doc  # Optional path to your book, relative to the repository root
 
-# sphinx:
-#   config:
+sphinx:
+  config:
+    # Ignore some warnings from MyST parser
+    suppress_warnings : ['myst.header']
 #     nb_custom_formats:
 #       .Rmd:
 #         - jupytext.reads
