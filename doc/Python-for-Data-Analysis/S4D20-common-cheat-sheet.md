@@ -1,4 +1,20 @@
-# Pandas Cheat Sheet / 速查手册
+# Python 常用速查手册（Cheat Sheet） -WIP
+
+> https://github.com/FavioVazquez/ds-cheatsheets
+> https://github.com/wilfredinni/python-cheatsheet/tree/master
+> https://www.pythoncheatsheet.org/
+> https://github.com/kevin7lou/DS-ML-Cheatsheet
+> https://github.com/dennyzhang/cheatsheet-python-A4
+> https://github.com/AbdulMalikDev/PythonCheatSheet
+> https://github.com/aaronwangy/Data-Science-Cheatsheet
+> https://github.com/yash42828/Data-Science--All-Cheat-Sheet
+> https://github.com/FranzDiebold/data-science-cheat-sheets
+> https://github.com/ml874/Data-Science-Cheatsheet
+> https://github.com/cheat-sheets/data-science-cheat-sheet
+> https://github.com/sidakwalia/Data-Science-Cheat-Sheet
+> https://github.com/dformoso/machine-learning-mindmap
+
+## Pandas Cheat Sheet / 速查手册
 
 > 本文翻译自文章：[Pandas Cheat Sheet - Python for Data Science](https://www.dataquest.io/blog/pandas-cheat-sheet/)，同时添加了部分注解。
 
@@ -11,7 +27,7 @@
 
 在第一次学习Pandas的过程中，你会发现你需要记忆很多的函数和方法。所以在这里我们汇总一下[Pandas官方文档](https://pandas.pydata.org/pandas-docs/stable/index.html)中比较常用的函数和方法，以方便大家记忆。同时，我们提供一个PDF版本，方便大家打印。[pandas-cheat-sheet.pdf](https://www.dataquest.io/blog/images/cheat-sheets/pandas-cheat-sheet.pdf)
 
-## 关键缩写和包导入
+### 关键缩写和包导入
 
 在这个速查手册中，我们使用如下缩写：
 
@@ -26,7 +42,7 @@ import pandas as pd
 import numpy as np
 ```
 
-## 导入数据
+### 导入数据
 
 - `pd.read_csv(filename)` | 从CSV文件导入数据
 
@@ -44,7 +60,7 @@ import numpy as np
 
 - `pd.DataFrame(dict)` | 从字典对象导入数据，Key是列名，Value是数据
 
-## 导出数据
+### 导出数据
 
 - `df.to_csv(filename)` | 导出数据到CSV文件
 
@@ -54,7 +70,7 @@ import numpy as np
 
 - `df.to_json(filename)` | 以Json格式导出数据到文本文件
 
-## 创建测试对象
+### 创建测试对象
 
 - `pd.DataFrame(np.random.rand(20,5))` | 创建20行5列的随机数组成的DataFrame对象
 
@@ -62,7 +78,7 @@ import numpy as np
 
 - `df.index = pd.date_range('1900/1/30', periods=df.shape[0])` | 增加一个日期索引
 
-## 查看、检查数据
+### 查看、检查数据
 
 - `df.head(n)` | 查看DataFrame对象的前n行
 
@@ -78,7 +94,7 @@ import numpy as np
 
 - `df.apply(pd.Series.value_counts)` | 查看DataFrame对象中每一列的唯一值和计数
 
-## 数据选取
+### 数据选取
 
 - `df[col]` | 根据列名，并以Series的形式返回列
 
@@ -92,7 +108,7 @@ import numpy as np
 
 - `df.iloc[0,0]` | 返回第一列的第一个元素
 
-## 数据清理
+### 数据清理
 
 - `df.columns = ['a','b','c']` | 重命名列名
 
@@ -122,7 +138,7 @@ import numpy as np
 
 - `df.rename(index=lambda x: x + 1)` | 批量重命名索引
 
-## 数据处理：Filter、Sort和GroupBy
+### 数据处理：Filter、Sort和GroupBy
 
 - `df[df[col] > 0.5]` | 选择col列的值大于0.5的行
 
@@ -146,7 +162,7 @@ import numpy as np
 
 - `data.apply(np.max,axis=1)` | 对DataFrame中的每一行应用函数np.max
 
-## 数据合并
+### 数据合并
 
 - `df1.append(df2)` | 将df2中的行添加到df1的尾部
 
@@ -154,7 +170,7 @@ import numpy as np
 
 - `df1.join(df2,on=col1,how='inner')` | 对df1的列和df2的列执行SQL形式的join
 
-## 数据统计
+### 数据统计
 
 - `df.describe()` | 查看数据值列的汇总统计
 
