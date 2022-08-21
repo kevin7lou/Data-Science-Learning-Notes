@@ -38,10 +38,10 @@ parts:
       title: Pandas Mindmap & Practice
     - file: doc/Python-for-Data-Analysis/S2D10-reading-and-writing-data.ipynb
       title: Reading and Writing Data
-  - file: doc/Python-for-Data-Analysis/S3/S3D00-programming-constructs.md
+  - file: doc/Python-for-Data-Analysis/S3D00-programming-constructs.md
     title: "Section 3: Programming Constructs"
     sections:
-    - file: doc/Python-for-Data-Analysis/S3/S3D11-control-flow.ipynb
+    - file: doc/Python-for-Data-Analysis/S3D11-control-flow.ipynb
       title: Control Flow
     - file: doc/Python-for-Data-Analysis/S3D12-functions.ipynb
       title: Functions
@@ -56,6 +56,8 @@ parts:
       title: Work with Text Data
     - file: doc/Python-for-Data-Analysis/S4D16-preparing-numeric-data.ipynb
       title: Preparing Numeric Data
+    - file: doc/Python-for-Data-Analysis/S4D20-common-cheat-sheet.md
+      title: Common Cheatsheets
   # - file: tutorials/references
 
 - caption: 🧭 Topic Guides
