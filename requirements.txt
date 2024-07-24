@@ -2,7 +2,7 @@ jupyter-book
 numpy
 pandas
 matplotlib
-sklearn
+scikit-learn
 # python3-sphinx
 # jupytext
 # sphinx-click
