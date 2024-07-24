@@ -1,10 +1,15 @@
 # Python for Data Analysis
 
-> source:
+```{admonition} Copyright & Sources
+:class: note
+- (https://github.com/GregHamel/Python_For_Data_Analysis)
+- (http://hamelg.blogspot.com/2015/12/python-for-data-analysis-index.html)
+- (https://github.com/Zorro-Lin-7/Statistics-and-Data-Analysis-in-Python)
+```
+
+> :
 >
-> - <https://github.com/GregHamel/Python_For_Data_Analysis>
-> - <http://hamelg.blogspot.com/2015/12/python-for-data-analysis-index.html>
-> - <https://github.com/Zorro-Lin-7/Statistics-and-Data-Analysis-in-Python>
+
 
 This Kernel is an index accompanying a series of tutorial notebooks introducing Python for data analysis. This series is intended for those new to data science, programming and Python. It is an updated version of a guide I previously posted on my blog.
 
