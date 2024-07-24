@@ -1,18 +1,21 @@
+#######################################################################################
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Statistics and Data Analysis in Python
 author: Kevin Lou
 logo: img/logo.png
-copyright: "2022"
+copyright: "2024"
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-
 exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+# Auto-exclude files not in the toc
+only_build_toc_files        : false
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
-
+#######################################################################################
+# Execution settings
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -28,29 +31,33 @@ html:
   use_repository_button: true
   home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar
 
+#######################################################################################
 # Parse and render settings
   # myst_substitutions:
   #     sub3: My _global_ value!
 parse:
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
-    - amsmath
+    # - amsmath
     - colon_fence
-    - deflist
+    # - deflist
     - dollarmath
-    - html_admonition
-    - html_image
+    # - html_admonition
+    # - html_image
     - linkify
-    - replacements
-    - smartquotes
+    # - replacements
+    # - smartquotes
     - substitution
     - tasklist
   myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
   myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
 
+#######################################################################################
+# LaTeX-specific settings
 # Define the name of the latex output file for PDF builds
 latex:
-  latex_documents:
-    targetname: book.tex
+  latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
+  use_jupyterbook_latex     : true # use sphinx-jupyterbook-latex for pdf builds as default
+
 
 
 # Information about where the book exists on the web
@@ -59,10 +66,16 @@ repository:
   branch: master  # Which branch of the repository should be used when creating links (optional)
   path_to_book: doc  # Optional path to your book, relative to the repository root
 
+#######################################################################################
+# Advanced and power-user settings
 sphinx:
-  config:
-    # Ignore some warnings from MyST parser
-    suppress_warnings : ['myst.header']
+  extra_extensions          :   # A list of extra extensions to load by Sphinx (added to those already used by JB).
+  local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
+  recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
+  config                    :   # key-value pairs to directly over-ride the Sphinx configuration
+#   config:
+#     # Ignore some warnings from MyST parser
+#     suppress_warnings : ['myst.header']
 #     nb_custom_formats:
 #       .Rmd:
 #         - jupytext.reads
