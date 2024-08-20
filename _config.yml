@@ -2,7 +2,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Statistics and Data Analysis in Python
+title: Statistics and Data Science in Python
 author: Kevin Lou
 logo: img/logo.png
 copyright: "2024"
@@ -63,7 +63,7 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/kevin7lou/Statistics-and-Data-Analysis-in-Python  # Online location of your book
+  url: https://github.com/kevin7lou/Data-Science-Learning-Notes  # Online location of your book
   branch: master  # Which branch of the repository should be used when creating links (optional)
   path_to_book: doc  # Optional path to your book, relative to the repository root
 

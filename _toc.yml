@@ -60,6 +60,11 @@ parts:
       title: Common Cheatsheets
   # - file: tutorials/references
 
+- caption: 📚 Statistics For Business and Economics
+  chapters:
+  - file: doc/Statistics-Business-Economics/README
+    title: Index of Contents
+
 - caption: 🧭 Topic Guides
   # chapters:
   # - file: basics/organize
