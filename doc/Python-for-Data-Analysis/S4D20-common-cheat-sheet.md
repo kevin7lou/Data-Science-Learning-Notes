@@ -1,18 +1,18 @@
 # Python 常用速查手册（Cheat Sheet） -WIP
 
-> https://github.com/FavioVazquez/ds-cheatsheets
-> https://github.com/wilfredinni/python-cheatsheet/tree/master
-> https://www.pythoncheatsheet.org/
-> https://github.com/kevin7lou/DS-ML-Cheatsheet
-> https://github.com/dennyzhang/cheatsheet-python-A4
-> https://github.com/AbdulMalikDev/PythonCheatSheet
-> https://github.com/aaronwangy/Data-Science-Cheatsheet
-> https://github.com/yash42828/Data-Science--All-Cheat-Sheet
-> https://github.com/FranzDiebold/data-science-cheat-sheets
-> https://github.com/ml874/Data-Science-Cheatsheet
-> https://github.com/cheat-sheets/data-science-cheat-sheet
-> https://github.com/sidakwalia/Data-Science-Cheat-Sheet
-> https://github.com/dformoso/machine-learning-mindmap
+> - <https://github.com/FavioVazquez/ds-cheatsheets>
+> - <https://github.com/wilfredinni/python-cheatsheet/tree/master>
+> - <https://www.pythoncheatsheet.org/>
+> - <https://github.com/kevin7lou/DS-ML-Cheatsheet>
+> - <https://github.com/dennyzhang/cheatsheet-python-A4>
+> - <https://github.com/AbdulMalikDev/PythonCheatSheet>
+> - <https://github.com/aaronwangy/Data-Science-Cheatsheet>
+> - <https://github.com/yash42828/Data-Science--All-Cheat-Sheet>
+> - <https://github.com/FranzDiebold/data-science-cheat-sheets>
+> - <https://github.com/ml874/Data-Science-Cheatsheet>
+> - <https://github.com/cheat-sheets/data-science-cheat-sheet>
+> - <https://github.com/sidakwalia/Data-Science-Cheat-Sheet>
+> - <https://github.com/dformoso/machine-learning-mindmap>
 
 ## Pandas Cheat Sheet / 速查手册
 
@@ -32,7 +32,6 @@
 在这个速查手册中，我们使用如下缩写：
 
 > df：任意的Pandas DataFrame对象
->  
 > s：任意的Pandas Series对象
 
 同时我们需要做如下的引入：
