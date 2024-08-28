@@ -3,6 +3,10 @@ numpy
 pandas
 matplotlib
 scikit-learn
+seaborn
+scipy
+statsmodels
+pingouin
 # python3-sphinx
 # jupytext
 # sphinx-click
