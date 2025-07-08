@@ -1,3 +1,4 @@
+python>=3.9
 jupyter-book>=2.0
 numpy
 pandas
