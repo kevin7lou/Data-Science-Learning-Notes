@@ -62,7 +62,7 @@ parts:
 
 - caption: 📚 Statistics For Business and Economics
   chapters:
-  - file: doc/Statistics-Business-Economics/README
+  - file: doc/Stats-For-Biz-Econ/README
     title: Index of Contents
 
 - caption: 🧭 Topic Guides
