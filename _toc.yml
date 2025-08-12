@@ -65,6 +65,15 @@ parts:
   - file: doc/Stats-For-Biz-Econ/README
     title: Index of Contents
 
+- caption: 📚 Machine Learning by Doing
+  chapters:
+  - file: doc/Machine-Learning-aibydoing/02.线性回归实现与应用.ipynb
+    title: 线性回归实现与应用
+  - file: doc/Machine-Learning-aibydoing/03.北京市住房价格预测.ipynb
+    title: 北京市住房价格预测
+  - file: doc/Machine-Learning-aibydoing/04.多项式回归实现与应用.ipynb
+    title: 多项式回归实现与应用
+
 - caption: 🧭 Topic Guides
   # chapters:
   # - file: basics/organize
